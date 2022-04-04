@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+body {
+  background: #111d27;
+  color: #111;
+  min-width: 320px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  padding: 50px 20px;
+}
+
+.pricing {
+	text-align: center;
+	border: 1px solid #f0f0f0;
+	color: #777;
+	font-size: 14px;
+	padding-left: 0;
+	margin-bottom: 30px;
+  font-family: 'Lato';
+}
+.pricing img {
+	display: block;
+	margin: auto;
+	width: 32px;
+}
+.pricing li:first-child,
+.pricing li:last-child {
+	padding: 20px 13px;
+}
+.pricing li {
+	list-style: none;
+	padding: 13px;
+}
+.pricing li + li {
+	border-top: 1px solid #f0f0f0;
+}
+.pricing big {
+	font-size: 32px;
+}
+.pricing h3 {
+	margin-bottom: 0;
+  font-size: 36px;
+}
+.pricing span {
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+}
+.pricing li:nth-last-child(2) {
+	padding: 5px 13px;
+}
+.pricing button {
+	width: auto;
+	margin: auto;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 50px;
+	color: #fff;
+	padding: 9px 24px;
+	background: #aaa;
+	opacity: 1;
+	transition: opacity .2s ease;
+  border: none;
+  outline: none;
+}
+.pricing button:hover {
+	opacity: .9;
+}
+.pricing button:active {
+	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+/* pricing color */
+.p-green big,
+.p-green h3 {
+	color: #4c7737;
+}
+.p-green button {
+	background: #4c7737;
+}
+.p-yel big,
+.p-yel h3 {
+	color: #ffbb42;
+}
+.p-yel button {
+	background: #ffbb42;
+}
+.p-red big,
+.p-red h3 {
+	color: #e13c4c;
+}
+.p-red button {
+	background: #e13c4c;
+}
+.p-blue big,
+.p-blue h3 {
+	color: #3f4bb8;
+}
+.p-blue button {
+	background: #3f4bb8;
+}
+
+
+.login-trigger {
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to bottom right, #B05574, #F87E7B);
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    top: 50%;
+  }
+
+  /*Modal*/
+  h4 {
+    font-weight: bold;
+    color: #fff;
+  }
+  .close {
+    color: #fff;
+    transform: scale(1.2)
+  }
+  .modal-content {
+    font-weight: bold;
+    background: linear-gradient(to bottom right,#F87E7B,#B05574);
+  }
+  .form-control {
+    margin: 1em 0;
+  }
+  .form-control:hover, .form-control:focus {
+    box-shadow: none;
+    border-color: #fff;
+    text-decoration: none;
+  }
+  .username, .password {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #eee;
+    padding-left: 0;
+    font-weight: normal;
+    background: transparent;
+  }
+  .form-control::-webkit-input-placeholder {
+    color: #eee;
+  }
+  .form-control:focus::-webkit-input-placeholder {
+    font-weight: bold;
+    color: #fff;
+  }
+  .login {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #FAB87F;
+    color: #FAB87F;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 1em;
+  }
+  .login:hover {
+    background: #FAB87F;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+  .payment-card {
+    width: 30rem;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(1.5rem);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    box-shadow: 0 1rem 3rem -2rem #493167, inset 0 0 0.2rem 0rem rgba(255,255,255,0.4);
+  }
+
+  .payment-card__title {
+    font-weight: 600;
+    color: #493167;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .payment-card__field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment-card__field--small {
+    max-width: 40%;
+  }
+
+  .payment-card__extra-fields {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1rem;
+  }
+
+  .payment-card__input {
+    background: none;
+    border: none;
+    border-bottom: dashed 0.15rem rgba(255,255,255,0.15);
+    font-family: 'JetBrains Mono', monospace;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  }
+
+  .payment-card__input:focus {
+    outline: none;
+    border-color: rgba(255,255,255,0.6);
+  }
+
+  .payment-card__input::placeholder {
+    color: rgba(255,255,255,0.5);
+    text-shadow: none;
+  }
+
+  .payment-card__field--large
+  .payment-card__input {
+    font-size: 2rem;
+  }
+
+  .payment-card__field--small
+  .payment-card__input {
+    font-size: 1.2rem;
+  }
+
+  .payment-card__field-label {
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    margin: 0 0 0.2rem;
+    font-weight: 400;
+  }
+
+
+  /*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/
+.responstable {
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: #FFF;
+    color: #024457;
+    border-radius: 10px;
+    border: 1px solid #167F92;
+  }
+  .responstable tr {
+    border: 1px solid #D9E4E6;
+  }
+  .responstable tr:nth-child(odd) {
+    background-color: #EAF3F3;
+  }
+  .responstable th {
+    display: none;
+    border: 1px solid #FFF;
+    background-color: #167F92;
+    color: #FFF;
+    padding: 1em;
+  }
+  .responstable th:first-child {
+    display: table-cell;
+    text-align: center;
+  }
+  .responstable th:nth-child(2) {
+    display: table-cell;
+  }
+  .responstable th:nth-child(2) span {
+    display: none;
+  }
+  .responstable th:nth-child(2):after {
+    content: attr(data-th);
+  }
+  @media (min-width: 480px) {
+    .responstable th:nth-child(2) span {
+      display: block;
+    }
+    .responstable th:nth-child(2):after {
+      display: none;
+    }
+  }
+  .responstable td {
+    display: block;
+    word-wrap: break-word;
+    max-width: 7em;
+  }
+  .responstable td:first-child {
+    display: table-cell;
+    text-align: center;
+    border-right: 1px solid #D9E4E6;
+  }
+  @media (min-width: 480px) {
+    .responstable td {
+      border: 1px solid #D9E4E6;
+    }
+  }
+  .responstable th, .responstable td {
+    text-align: left;
+    margin: .5em 1em;
+  }
+  @media (min-width: 480px) {
+    .responstable th, .responstable td {
+      display: table-cell;
+      padding: 1em;
+    }
+  }
+
+  body {
+    padding: 0 2em;
+    font-family: Arial, sans-serif;
+    color: #024457;
+    background: #f2f2f2;
+  }
+
+  h1 {
+    font-family: Verdana;
+    font-weight: normal;
+    color: #024457;
+  }
+  h1 span {
+    color: #167F92;
+  }
+
