@@ -145,9 +145,6 @@
                   </div>
 
                   <div class="col-md-6 col-xs-12">
-                      <h2><small><del> $11999.00</del></small><strong class="text-primary">${{ $cars->price }}</strong></h2>
-
-                      <br>
 
                       <ul class="list-group list-group-flush">
                        <li class="list-group-item">
@@ -241,9 +238,9 @@
 
                         <li class="list-group-item">
                              <div class="clearfix">
-                                  <span class="pull-left">Price</span>
+                                  <span class="pull-left">Price (per day)</span>
 
-                                  <strong class="pull-right">{{ $cars->price }}</strong>
+                                  <strong class="pull-right"><sup>$</sup>{{ $cars->price }}</strong>
                              </div>
                         </li>
                     </ul>
@@ -319,7 +316,7 @@
 
                                         <br>
 
-                                        <strong>John Smith</strong>
+                                        <strong>Patrick Virgo</strong>
 
                                     </p>
 
@@ -329,7 +326,7 @@
                                         <br>
 
                                         <strong>
-                                          <a href="tel:123-456-789">123-456-789</a>
+                                          <a href="tel:+18764609997">+1 876 460 9997</a>
                                         </strong>
                                     </p>
 
@@ -339,7 +336,7 @@
                                         <br>
 
                                         <strong>
-                                          <a href="tel:456789123">456789123</a>
+                                          <a href="tel:+18767879257">+1 876 787 9257</a>
                                         </strong>
                                     </p>
 
@@ -350,7 +347,7 @@
                                         <br>
 
                                         <strong>
-                                          <a href="mailto:john@carsales.com">john@carsales.com</a>
+                                          <a href="mailto:alanzogenosys1@gmail.com">alanzogenosys1@gmail.com</a>
                                         </strong>
                                       </p>
                                     </div>
@@ -407,10 +404,10 @@
                         <div class="footer-heading">
                             <h4>Contact Information</h4>
                         </div>
-                        <p><i class="fa fa-map-marker"></i> 212 Barrington Court New York, ABC</p>
+                        <p><i class="fa fa-map-marker"></i> Rose Hall Montego Bay St. James JM</p>
                         <ul>
-                            <li><span>Phone:</span><a href="#">+1 333 4040 5566</a></li>
-                            <li><span>Email:</span><a href="#">contact@company.com</a></li>
+                            <li><span>Phone:</span><a href="tel:+18767879257">+1 876 787 9257</a></li>
+                            <li><span>Email:</span><a href="mailto:alanzogenosys1@gmail.com">alanzogenosys1@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>

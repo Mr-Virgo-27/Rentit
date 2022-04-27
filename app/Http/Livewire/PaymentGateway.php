@@ -27,7 +27,7 @@ class PaymentGateway extends Component
             $curl = curl_init();
 
         curl_setopt_array($curl, array(
-        CURLOPT_URL => 'http://10.47.12.26:8001/api/payment',
+        CURLOPT_URL => 'http://192.168.0.103:8001/api/payment',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,

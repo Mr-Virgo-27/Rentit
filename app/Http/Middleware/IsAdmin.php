@@ -18,12 +18,12 @@ class IsAdmin
     public function handle($request, Closure $next)
     {
         if(!isset(Auth::user()->is_admin)){
-            return redirect('home')->with('message',"You don't have admin access.");
+            return redirect('home')->with('test',"You don't have admin access.");
         }
         if(auth()->user()->is_admin == 1){
             return $next($request);
         }
 
-        return redirect('home')->with('message',"You don't have admin access.");
+        return redirect('home')->with('test',"You don't have admin access.");
     }
 }

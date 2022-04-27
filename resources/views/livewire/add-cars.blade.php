@@ -38,7 +38,7 @@
                             <ul class="dropdown menu">
                                 <li><a href="/">Home</a></li>
 
-                                <li class='active'><a href="/cars">Cars</a></li>
+                               <li class='active'><a href="/cars">Cars</a></li>
 
                                 <li>
                                     <a href="#">More</a>
@@ -100,7 +100,7 @@
 
                                  <input wire:model="vehicle_type" type="text" class="form-control">
                                  @error('vehicle_type')
-                                                {{ $message }}
+                                               <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -111,7 +111,7 @@
 
                                  <input wire:model="year" type="text" class="form-control">
                                  @error('year')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -122,7 +122,7 @@
 
                                  <input wire:model="brand" type="text" class="form-control">
                                  @error('brand')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -133,7 +133,7 @@
 
                                  <input wire:model="model" type="text" class="form-control">
                                  @error('model')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -144,7 +144,7 @@
 
                                  <input wire:model="color" type="text" class="form-control">
                                  @error('color')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -155,7 +155,7 @@
 
                                  <input wire:model="location" type="text" class="form-control">
                                  @error('location')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -166,7 +166,7 @@
 
                                  <input wire:model="image_path" type="file" class="form-control">
                                  @error('image_path')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -177,7 +177,7 @@
 
                                  <input wire:model="fuel" type="text" class="form-control">
                                  @error('fuel')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -188,7 +188,7 @@
 
                                  <input wire:model="number_of_seats" type="text" class="form-control">
                                  @error('number_of_seats')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -199,7 +199,7 @@
 
                                  <input wire:model="mileage" type="text" class="form-control">
                                  @error('mileage')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -234,7 +234,7 @@
 
                                  <input wire:model="gearbox" type="text" class="form-control">
                                  @error('gearbox')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -245,7 +245,7 @@
 
                                  <input wire:model="doors" type="text" class="form-control">
                                  @error('doors')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -256,7 +256,7 @@
 
                                  <input wire:model="price" type="text" class="form-control">
                                  @error('price')
-                                                {{ $message }}
+                                 <span style="color: red;">{{ strtoupper($message) }}</span>
                                             @enderror
                             </div>
                         </div>
@@ -354,7 +354,7 @@
                                 <ul>
                                     <li><a href="/"><i class="fa fa-stop"></i>Home</a></li>
                                     <li><a href="/about-us"><i class="fa fa-stop"></i>About</a></li>
-                                    <li><a href="{{ route('contact') }}"><i class="fa fa-stop"></i>Contact Us</a></li>
+                                    <li><a href="/contact"><i class="fa fa-stop"></i>Contact Us</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
@@ -370,10 +370,10 @@
                         <div class="footer-heading">
                             <h4>Contact Information</h4>
                         </div>
-                        <p><i class="fa fa-map-marker"></i> 212 Barrington Court New York, ABC</p>
+                        <p><i class="fa fa-map-marker"></i> Rose Hall Montego Bay St. James JM</p>
                         <ul>
-                            <li><span>Phone:</span><a href="#">+1 333 4040 5566</a></li>
-                            <li><span>Email:</span><a href="#">contact@company.com</a></li>
+                            <li><span>Phone:</span><a href="tel:+18767879257">+1 876 787 9257</a></li>
+                            <li><span>Email:</span><a href="mailto:alanzogenosys1@gmail.com">alanzogenosys1@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -391,10 +391,10 @@
     <script src="/js/vendor/bootstrap.min.js"></script>
 
     <script src="/js/datepicker.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="sweetalert2.all.min.js"></script>
     <script src="/js/plugins.js"></script>
     <script src="/js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
 
     @if (session()->has('message'))
         <script>
@@ -419,7 +419,7 @@
             Swal.fire(
             'OK!',
             'You have deleted your vehicle entry succsessfully!',
-            'error'
+            'success'
             )
         </script>
     @endif

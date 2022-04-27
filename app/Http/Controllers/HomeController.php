@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Car;
 use App\Models\History;
 use App\Models\rentApplication;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

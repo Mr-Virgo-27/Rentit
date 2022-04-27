@@ -53,7 +53,6 @@ html, body {
 
 body {
   font-family: "DM Sans", sans-serif;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   background-color: var(--app-container);
@@ -357,7 +356,7 @@ button, a {
   padding-bottom: 32px;
   background-color: var(--projects-section);
   margin-left: 24px;
-  flex: 1;
+  flex: 1.4;
   width: 100%;
   border-radius: 30px;
   position: relative;
@@ -1171,13 +1170,6 @@ button, a {
     bottom: 10%;
   }
   /* END CARD DESIGN */
-
-  body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    background-color: #eee;
-    min-height: 100vh;
-  }
   .btn i:before {
     width: 14px;
     height: 14px;

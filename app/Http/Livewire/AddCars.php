@@ -82,22 +82,41 @@ class AddCars extends Component
      *
      * @var array
      */
+
+
+
+    protected $rules = [
+        'vehicle_type' => 'required|alpha|max:255|min:3',
+        'color' => 'required|alpha|max:255|min:3',
+        'brand' => 'required|alpha|max:255|min:3',
+        'fuel' => 'required|alpha|max:255|min:3',
+        'image_path' => 'required|mimes:jpg, png, jpeg',
+        'location' => 'required|alpha_num|max:255|min:3',
+        'model' => 'required|alpha_num|max:255|min:3',
+        'mileage' => 'required|numeric|lt:10000',
+        'doors' => 'required|numeric|gt:1',
+        'number_of_seats' => 'required',
+        'price' => 'required|numeric',
+        'gearbox' => 'required|max:255|min:3',
+        'year' => 'required|numeric|gt:1990',
+    ];
+
     public function store()
     {
         $this->validate([
-            'vehicle_type' => 'required',
-            'color' => 'required',
-            'brand' => 'required',
-            'fuel' => 'required',
-            'image_path' => 'required|mimes:jpg, png, jpeg',
-            'location' => 'required',
-            'model' => 'required',
-            'mileage' => 'required',
-            'doors' => 'required',
-            'number_of_seats' => 'required',
-            'price' => 'required',
-            'gearbox' => 'required',
-            'year' => 'required',
+        'vehicle_type' => 'required|alpha|max:255|min:3',
+        'color' => 'required|alpha|max:255|min:3',
+        'brand' => 'required|alpha|max:255|min:3',
+        'fuel' => 'required|alpha|max:255|min:3',
+        'image_path' => 'required|mimes:jpg, png, jpeg',
+        'location' => 'required|alpha_num|max:255|min:3',
+        'model' => 'required|alpha_num|max:255|min:3',
+        'mileage' => 'required|numeric|lt:10000',
+        'doors' => 'required|numeric|gt:1',
+        'number_of_seats' => 'required',
+        'price' => 'required|numeric',
+        'gearbox' => 'required|max:255|min:3',
+        'year' => 'required|numeric|gt:1990',
         ]);
         $fileName = $this->image_path->getClientOriginalName();
         $this->image_path->storeAs('uploaded',$fileName,'public');
@@ -148,6 +167,12 @@ class AddCars extends Component
         $this->btn_nm = 'Edit';
     }
 
+
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
+
     /**
      * The attributes that are mass assignable.
      *
@@ -163,19 +188,19 @@ class AddCars extends Component
     public function modify()
     {
         $this->validate([
-            'vehicle_type' => 'required',
-            'color' => 'required',
-            'brand' => 'required',
-            'location' => 'required',
-            'image_path' => 'required',
-            'fuel' => 'required',
-            'model' => 'required',
-            'mileage' => 'required',
-            'doors' => 'required',
-            'number_of_seats' => 'required',
-            'price' => 'required',
-            'gearbox' => 'required',
-            'year' => 'required',
+        'vehicle_type' => 'required|alpha|max:255|min:3',
+        'color' => 'required|alpha|max:255|min:3',
+        'brand' => 'required|alpha|max:255|min:3',
+        'fuel' => 'required|alpha|max:255|min:3',
+        'image_path' => 'required|mimes:jpg, png, jpeg',
+        'location' => 'required|string|max:255|min:3',
+        'model' => 'required|string|max:255|min:3',
+        'mileage' => 'required|numeric|lt:50000',
+        'doors' => 'required|numeric|gt:1',
+        'number_of_seats' => 'required|numeric',
+        'price' => 'required|numeric',
+        'gearbox' => 'required|max:255|min:3',
+        'year' => 'required|numeric|gt:1990',
         ]);
 
         $Car = Car::find($this->Car_id);

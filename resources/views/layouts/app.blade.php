@@ -13,6 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
+    {{-- <link rel="stylesheet" href="/css/admin.css"> --}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     @livewireStyles
 </head>

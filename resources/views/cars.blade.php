@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="/css/hero-slider.css">
         <link rel="stylesheet" href="/css/owl-carousel.css">
         <link rel="stylesheet" href="/css/style.css">
+        <script src="https://kit.fontawesome.com/9b62d0cfda.js" crossorigin="anonymous"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -236,19 +237,17 @@
                                 </div>
                             </div>
                             <div class="down-content">
-                                <h4>{{ $Car->location }}</h4>
-
-                                <br>
-
                                 <p>{{ $Car->year }}</p>
 
-                                <p><span><del><sup>$</sup>8500.00 </del> <strong><sup>$</sup>{{ $Car->price }}</strong></span></p>
+                                <h4 class="text-button">{{ $Car->location }} <i style="color:blue" class="fa-solid fa-location-dot"></i></h4>
+
+                                <p class="text-button"><span> <strong><sup>$</sup>{{ $Car->price }}</strong> per day</span></p>
 
                                 <div class="text-button">
                                     @if(!$Car->rent_application([0])->exists())
                                     <a href="/car-details/{{ $Car->id }}">Rent It</a>
                                     @else
-                                    <a href="/more-details/{{ $Car->id }}">View Details</a>
+                                    <a href="/more-details/{{ $Car->id }}">Unavailable. View Details</a>
                                     @endif
                                 </div>
                             </div>
@@ -305,10 +304,10 @@
                         <div class="footer-heading">
                             <h4>Contact Information</h4>
                         </div>
-                        <p><i class="fa fa-map-marker"></i> 212 Barrington Court New York, ABC</p>
+                        <p><i class="fa fa-map-marker"></i> Rose Hall Montego Bay St. James JM</p>
                         <ul>
-                            <li><span>Phone:</span><a href="#">+1 333 4040 5566</a></li>
-                            <li><span>Email:</span><a href="#">contact@company.com</a></li>
+                            <li><span>Phone:</span><a href="tel:+18767879257">+1 876 787 9257</a></li>
+                            <li><span>Email:</span><a href="mailto:alanzogenosys1@gmail.com">alanzogenosys1@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>

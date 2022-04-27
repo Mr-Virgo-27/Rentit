@@ -183,10 +183,10 @@
                         <div class="footer-heading">
                             <h4>Contact Information</h4>
                         </div>
-                        <p><i class="fa fa-map-marker"></i> 212 Barrington Court New York, ABC</p>
+                        <p><i class="fa fa-map-marker"></i> Rose Hall Montego Bay St. James JM</p>
                         <ul>
-                            <li><span>Phone:</span><a href="#">+1 333 4040 5566</a></li>
-                            <li><span>Email:</span><a href="#">contact@company.com</a></li>
+                            <li><span>Phone:</span><a href="tel:+18767879257">+1 876 787 9257</a></li>
+                            <li><span>Email:</span><a href="mailto:alanzogenosys1@gmail.com">alanzogenosys1@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>

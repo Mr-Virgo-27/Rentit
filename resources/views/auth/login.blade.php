@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link rel="stylesheet" href="sweetalert2.min.css">
 <main class="sm:container sm:mx-auto sm:max-w-lg sm:mt-10">
     <div class="flex">
         <div class="w-full">
@@ -81,4 +82,17 @@
         </div>
     </div>
 </main>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+    @if (session()->has('failed'))
+        <script>
+            Swal.fire(
+            'UH OH!',
+            "You've entered something incorrectly! Let's try again",
+            'error'
+            )
+        </script>
+    @endif
 @endsection

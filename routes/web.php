@@ -26,6 +26,7 @@ Route::get('/car-details/{id}',[PagesController::class, 'details'])->name('car-d
 Route::get('/more-details/{id}',[PagesController::class, 'moreDetails'])->name('more-details');
 Route::post('/car-details',[RentApplicationController::class, 'apply'])->name('apply');
 Route::get('/admin/addCar',[PagesController::class, 'add'])->name('add')->middleware('is_admin');
+Route::get('/admin/addCustomer',[PagesController::class, 'addNew'])->name('addNew')->middleware('is_admin');
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');

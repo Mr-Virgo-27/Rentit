@@ -106,4 +106,7 @@ class PagesController extends Controller
     public function add(){
         return view('liveView.vehcs');
     }
+    public function addNew(){
+        return view('liveView.addCustomer');
+    }
 }
