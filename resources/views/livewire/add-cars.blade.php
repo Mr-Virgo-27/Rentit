@@ -293,7 +293,7 @@
                         <div class="featured-item">
                             <div class="thumb">
                                 <div class="thumb-img">
-                                    <img src="{{ url('storage/uploaded/'.$Car->image_path) }}" alt="">
+                                    <a href="/more-details/{{ $Car->id }}"><img src="{{ url('storage/uploaded/'.$Car->image_path) }}" alt=""></a>
                                 </div>
                                 <div class="overlay-content">
                                   <strong><i class="fa fa-dashboard"></i> {{ $Car->mileage }}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -302,11 +302,11 @@
                                 </div>
                             </div>
                             <div class="down-content">
-                                <h4>Location: {{ $Car->location }}</h4>
+                                <p class="text-button">Year: {{ $Car->year }}</p>
 
-                                <p>Year: {{ $Car->year }}</p>
+                                <h4 class="text-button">Location: {{ $Car->location }}</h4>
 
-                                <p><span><del><sup>$</sup>8500.00 </del>/day <strong><sup>$</sup>{{ $Car->price }}/day</strong></span></p>
+                                <p class="text-button"><span><strong><sup>$</sup>{{ $Car->price }}/day</strong></span></p>
 
                                 <div class="text-button">
                                     <a href="#in" wire:click="edit({{ $Car->id }})">make changes</a>
